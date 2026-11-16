@@ -1,0 +1,8 @@
+services:
+  web:
+    image: docker.io/library/nginx:alpine
+    container_name: js-test-site
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
