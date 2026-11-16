@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta desc="Movie Madness is our first API sample app.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery.js" defer async></script>
+  <script src="js/Movie.js" defer async></script>
+  <script src="js/MovieDetails.js"></script>
+  <script src="js/MovieCredits.js"></script>
+  <script src="js/MovieVideos.js"></script>
+  <script src="js/Actor.js"></script>
+  <script src="js/tmdb.js" defer async></script>
+  <script src="js/app.js" defer async></script>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Fascinate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="css/app.css">
+  <title>Movie Madness</title>
+</head>
+<body onload="getTrends();">
+  <div id="moviePanel">
+    <h1 id="closeBtn" onclick="hideMovie();">[X]</h1>
+    <div id="backdrop">
+      <div id="posterDiv">
+        <img id="poster" src="" alt="">
+        <div id="watchlistControls">
+          <div id="watchBtn" class="noWatch"></div>
+          <div id="watchlistLink"><a href="watchlist.html" title="watchlist">view watchlist</a></div>
+        </div>
+      </div>
+      <div id="movieDetails">
+        <h1 id="title"></h1>
+        <h2 id="releaseDateRuntime"></h2>
+        <p id="overview"></p>
+        <div id="castPics"></div>
+        <div id="videoDiv">
+          <iframe id="youtubeVid" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a id="logo" href="index.html" title="home">
+    <img src="assets/images/logo.png" alt="logo">
+  </a>
+  <div id="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav>
+    <a href="about.html" title="about">about</a><br>
+    <a href="watchlist.html" title="watchlist">watchlist</a><br>
+    <a href="contact.html" title="contact">contact</a><br>
+    <div id="navSocials">
+      <img src="assets/images/codepenIcon.png" alt="codepen">
+      <img src="assets/images/linkedInIcon.png" alt="linkedIn">
+      <img src="assets/images/twitterIcon.png" alt="twitter">
+    </div>
+  </nav>
+  
+  <div id="grid">
+    <header></header>
+    <div id="search">
+      <input type="text" name="query" id="query" autofocus placeholder="movie search">
+      <input type="button" id="findMovie" value="find movie">
+    </div>
+    <div id="results"></div>
+    <footer>
+      <div>
+        <a href="#top" title="top">
+          <img id="footerLogo" src="assets/images/logo.png" alt="logo">
+        </a>
+      </div>
+      <div id="footerText">
+        &copy; <span id="year"></span> <span class="red">Movie Madness</span> because we're crazy about movies too.<br>
+        <img id="tmdb_logo" src="assets/images/tmdb_logo.svg" alt="TMDB Logo"><br>
+        Website designed by &#127760; <a href="https://fausto-gonzalez.github.io/">Fausto Gonzalez</a> &#x1f1fb;&#x1f1ea;&#x1f1e8;&#x1f1e6;
+      </div>
+      <div>
+        <a href="#" title="Investor Relations">Investor Relations</a><br>
+        <a href="#" title="Job Opportunities">Job Opportunities</a><br>
+        <a href="#" title="Privacy Policy">Privacy Policy</a><br>
+        <a href="#" title="Site Map">Site Map</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
