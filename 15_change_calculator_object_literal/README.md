@@ -1,6 +1,6 @@
 # Change Calculator with an Object Literal
 
-Modify the Change Calculator application to use an object literal while preserving its existing behavior. The calculator converts an entered amount of cents into quarters, dimes, nickels, and pennies.
+Modify the [Change Calculator application](https://github.com/fausto-gonzalez/javascript-coursework/tree/main/02_change_calculator) to use an object literal while preserving its existing behavior. The calculator converts an entered amount of cents into quarters, dimes, nickels, and pennies.
 
 ## Expected result
 
@@ -10,12 +10,11 @@ This screenshot shows the interface provided in the original assignment. Enterin
 
 ## Assignment steps
 
-1. Open the starter application in `exercises_extra/ch16/change_literal/`. It uses two JavaScript files, `calculate.js` for the application and `library_coin.js` for the library.
-2. Review `calculate.js`. All existing application code is inside the **Calculate** button’s click handler.
-3. Review `library_coin.js`. Initially, it contains only the strict-mode declaration.
-4. Add a script tag for the library file to `index.html`.
-5. In the library file, define an object literal named `coins`. Give it properties named `quarters`, `dimes`, `nickels`, and `cents`, and a `makeChange()` method that accepts an amount in cents. For a valid amount, calculate the coin counts and update those properties. For an invalid amount, throw an exception.
-6. Update `calculate.js` to use `coins` to calculate and display the coin counts. Preserve input validation in the click handler so invalid user input is rejected before it reaches `makeChange()`.
+1. Review `calculate.js`. All existing application code is inside the **Calculate** button’s click handler.
+2. Review `library_coin.js`. Initially, it contains only the strict-mode declaration.
+3. Add a script tag for the library file to `index.html`.
+4. In the library file, define an object literal named `coins`. Give it properties named `quarters`, `dimes`, `nickels`, and `cents`, and a `makeChange()` method that accepts an amount in cents. For a valid amount, calculate the coin counts and update those properties. For an invalid amount, throw an exception.
+5. Update `calculate.js` to use `coins` to calculate and display the coin counts. Preserve input validation in the click handler so invalid user input is rejected before it reaches `makeChange()`.
 
 ## Object requirements
 
