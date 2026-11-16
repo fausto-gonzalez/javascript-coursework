@@ -26,7 +26,7 @@ Determine AM or PM from the original 24-hour value. Hours from 0 through 11 are 
 | 15:04:03 | 3:04:03 PM |
 | 23:59:59 | 11:59:59 PM |
 
-The PDF’s conversion note mentions setting PM when the hour is greater than 12. Noon also requires PM, as reflected in the table above.
+*Note:* mentions setting PM when the hour is greater than 12. Noon also requires PM, as reflected in the table above.
 
 ## Timer behavior
 
